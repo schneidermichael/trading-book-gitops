@@ -4,7 +4,7 @@ metadata:
   name: trading-book-frontend-service
   namespace: tradingbook
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: trading-book-frontend
   ports:
