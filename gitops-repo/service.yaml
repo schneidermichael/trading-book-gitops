@@ -9,5 +9,5 @@ spec:
     app: trading-book-frontend
   ports:
     - protocol: TCP
-      port: 80       # Port exposed by the service
+      port: 8080       # Port exposed by the service
       targetPort: 3000 # Matches the containerPort above

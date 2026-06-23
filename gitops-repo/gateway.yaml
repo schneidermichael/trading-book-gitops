@@ -1,0 +1,14 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: local-web
+  namespace: tradingbook
+spec:
+  gatewayClassName: cloud-provider-kind
+  listeners:
+  - protocol: HTTP
+    port: 80
+    name: local-web-gw
+    allowedRoutes:
+      namespaces:
+        from: Same
